@@ -22,12 +22,15 @@ jobs:
       # התקנת חבילות - פקודה אחת מספיקה
       - name: Install dependencies
         run: npm ci
-        
+
+       # בניית הפרויקט
+      - name: Build Angular project
+        run: npm run build --if-present
+
+        # הרצת הפרויקט  
       - name: run project
         run: npm start
-    #   # בניית הפרויקט
-    #   - name: Build Angular project
-    #     run: npm run build --if-present
+    
 
     #   # הרצת בדיקות עם תמיכה ב-Chrome Headless
     #   - name: Run tests
