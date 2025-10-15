@@ -25,7 +25,7 @@ jobs:
 
        # בניית הפרויקט
       - name: Build Angular project
-        run: npm run build --if-present
+        run: npm run build
 
         # הרצת הפרויקט  
       - name: run project
