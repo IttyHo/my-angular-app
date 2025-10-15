@@ -22,7 +22,9 @@ jobs:
       # התקנת חבילות - פקודה אחת מספיקה
       - name: Install dependencies
         run: npm ci
-
+        
+      - name: run project
+        run: npm start
     #   # בניית הפרויקט
     #   - name: Build Angular project
     #     run: npm run build --if-present
